@@ -374,10 +374,10 @@
                 <!-- Category Switcher Tabs ("Lagu Adek" & "Lagu Abang") -->
                 <div class="flex gap-2 border-t border-white/10 pt-3">
                     <button onclick="switchCategory('adek')" id="tabAdek" class="flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-emerald-500 text-black flex items-center justify-center gap-1.5">
-                        <i class="fa-solid fa-heart text-rose-600"></i> Lagu Adek (<span id="countAdek">0</span>)
+                        <i class="fa-solid fa-heart text-rose-600"></i> lagu abang (<span id="countAdek">0</span>)
                     </button>
                     <button onclick="switchCategory('abang')" id="tabAbang" class="flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-white/10 text-slate-300 hover:bg-white/20 flex items-center justify-center gap-1.5">
-                        <i class="fa-solid fa-guitar text-emerald-400"></i> Lagu Abang (<span id="countAbang">0</span>)
+                        <i class="fa-solid fa-guitar text-emerald-400"></i> lagu adekk (<span id="countAbang">0</span>)
                     </button>
                 </div>
 
@@ -638,7 +638,7 @@
             
             document.getElementById('currentSongTitle').innerText = song.title;
             document.getElementById('currentSongArtist').innerText = song.artist;
-            document.getElementById('currentCategoryTag').innerText = currentCategory === 'adek' ? 'Lagu Adek 💖' : 'Lagu Abang 🎸';
+            document.getElementById('currentCategoryTag').innerText = currentCategory === 'adek' ? ' 💖 Lagu Abang 🎸' : 'Lagu Adek';
             document.getElementById('totalDuration').innerText = song.duration;
             
             audioPlayer.src = song.src;
@@ -818,7 +818,7 @@
         const quizQuestions = [
             { q: "Bagaimana cara utama kita berkomunikasi setiap harinya?", options: ["Lewat Surat Kaleng", "Chat, Voice & Video Call", "Merpati Pos"], answer: 1 },
             { q: "Apa impian terbesar kita dalam hubungan ini?", options: ["Pertama kali bisa bertemu langsung ✈️", "Pindah ke planet lain", "Beli kapal selam"], answer: 0 },
-            { q: "Jenis lagu apa yang disukai Anisa?", options: ["Lagu Adek & Lagu Abang Spotify Player", "Heavy Metal", "Hard Rock"], answer: 0 }
+            { q: "Jenis lagu apa yang disukai Anisa?", options: ["Lagu abnag & Lagu adek Spotify Player", "Heavy Metal", "Hard Rock"], answer: 0 }
         ];
 
         let currentQ = 0;
