@@ -188,45 +188,38 @@
     </div>
 
     <!-- MAIN CONTAINER -->
-    <div class="relative z-10 max-w-5xl mx-auto px-4 py-8 space-y-16">
+    <div class="relative z-10 max-w-5xl mx-auto px-3 sm:px-4 py-6 sm:py-8 space-y-12 sm:space-y-16">
 
         <!-- HEADER & NAVIGATION -->
-        <header class="glass-card rounded-3xl p-4 md:px-8 flex items-center justify-between shadow-sm border border-white/60">
-            <div class="flex items-center gap-3">
-                <span class="w-10 h-10 rounded-full bg-rose-500/20 text-rose-600 flex items-center justify-center font-bold text-xl">A</span>
-                <span class="font-handwriting text-2xl font-bold text-rose-600">Anisa Special Day</span>
+        <header class="glass-card rounded-2xl sm:rounded-3xl p-3 sm:px-8 flex items-center justify-between shadow-sm border border-white/60">
+            <div class="flex items-center gap-2 sm:gap-3">
+                <span class="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-rose-500/20 text-rose-600 flex items-center justify-center font-bold text-base sm:text-xl">A</span>
+                <span class="font-handwriting text-xl sm:text-2xl font-bold text-rose-600">Anisa Special Day</span>
             </div>
-            <nav class="hidden md:flex gap-6 text-sm font-medium text-slate-600">
-                <a href="#hero" class="hover:text-rose-600 transition">Utama</a>
-                <a href="#memories" class="hover:text-rose-600 transition">Cerita LDR</a>
-                <a href="#music-section" class="hover:text-rose-600 transition">Spotify Player</a>
-                <a href="#surat" class="hover:text-rose-600 transition">Surat Cinta</a>
-                <a href="#interactive" class="hover:text-rose-600 transition">Voucher & Kuis</a>
-            </nav>
-            <div class="text-xs px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-700 font-semibold border border-emerald-200 flex items-center gap-1.5">
-                <i class="fa-solid fa-globe"></i> <span>Terpisah Jarak, Dekat di Hati</span>
+            <div class="text-[10px] sm:text-xs px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-full bg-emerald-500/10 text-emerald-700 font-semibold border border-emerald-200 flex items-center gap-1">
+                <i class="fa-solid fa-globe"></i> <span class="hidden xs:inline">LDR Edition</span>
             </div>
         </header>
 
         <!-- 1. HERO SECTION -->
-        <section id="hero" class="text-center space-y-8 pt-4">
-            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-rose-600 font-medium text-sm animate-float">
+        <section id="hero" class="text-center space-y-6 sm:space-y-8 pt-2">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-rose-600 font-medium text-xs sm:text-sm animate-float">
                 <i class="fa-solid fa-heart animate-pulse"></i>
                 <span>Selamat Ulang Tahun Sayanggggg!</span>
                 <i class="fa-solid fa-heart animate-pulse"></i>
             </div>
 
-            <div class="space-y-3">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-800 tracking-tight leading-tight">
+            <div class="space-y-3 px-2">
+                <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-slate-800 tracking-tight leading-tight">
                     Happy 14th Birthday, <br class="hidden md:block"/>
-                    <span class="bg-gradient-to-r from-rose-500 via-pink-500 to-emerald-600 bg-clip-text text-transparent font-romantic text-6xl md:text-8xl">Anisa! 💖</span>
+                    <span class="bg-gradient-to-r from-rose-500 via-pink-500 to-emerald-600 bg-clip-text text-transparent font-romantic text-5xl sm:text-7xl md:text-8xl">Anisa! 💖</span>
                 </h1>
-                <p class="text-slate-600 max-w-xl mx-auto text-base md:text-lg">
+                <p class="text-slate-600 max-w-xl mx-auto text-sm sm:text-base md:text-lg">
                     Meskipun ragaku dan ragamu terpisah oleh jarak dan layar HP, rasaku ke Anisa nggak pernah berkurang sedikit pun. Terima kasih sudah mengisi hariku dengan manis!
                 </p>
             </div>
 
-            <div class="relative w-64 h-64 md:w-80 md:h-80 mx-auto">
+            <div class="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 mx-auto">
                 <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-rose-400 via-pink-300 to-emerald-300 blur-xl opacity-60 animate-pulse"></div>
                 <div class="relative w-full h-full rounded-full border-4 border-white glass-card overflow-hidden shadow-2xl group flex items-center justify-center">
                     <img id="mainPhoto" src="WhatsApp Image 2026-11-08 at 07.13.03.jpeg" alt="Foto Anisa" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
@@ -238,121 +231,122 @@
             </div>
 
             <!-- Countdown Counter -->
-            <div class="glass-card rounded-2xl p-6 max-w-2xl mx-auto shadow-lg border border-white/80">
-                <h3 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-4">
+            <div class="glass-card rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto shadow-lg border border-white/80">
+                <h3 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-3 sm:mb-4">
                     <i class="fa-regular fa-clock mr-1"></i> Hitung Mundur Ultah (12 November)
                 </h3>
-                <div class="grid grid-cols-4 gap-3 text-center">
-                    <div class="bg-white/60 p-3 rounded-xl border border-rose-100">
-                        <span id="cd-days" class="text-2xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-xs text-slate-500">Hari</span>
+                <div class="grid grid-cols-4 gap-2 sm:gap-3 text-center">
+                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
+                        <span id="cd-days" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
+                        <span class="text-[10px] sm:text-xs text-slate-500">Hari</span>
                     </div>
-                    <div class="bg-white/60 p-3 rounded-xl border border-rose-100">
-                        <span id="cd-hours" class="text-2xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-xs text-slate-500">Jam</span>
+                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
+                        <span id="cd-hours" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
+                        <span class="text-[10px] sm:text-xs text-slate-500">Jam</span>
                     </div>
-                    <div class="bg-white/60 p-3 rounded-xl border border-rose-100">
-                        <span id="cd-minutes" class="text-2xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-xs text-slate-500">Menit</span>
+                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
+                        <span id="cd-minutes" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
+                        <span class="text-[10px] sm:text-xs text-slate-500">Menit</span>
                     </div>
-                    <div class="bg-white/60 p-3 rounded-xl border border-rose-100">
-                        <span id="cd-seconds" class="text-2xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-xs text-slate-500">Detik</span>
+                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
+                        <span id="cd-seconds" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
+                        <span class="text-[10px] sm:text-xs text-slate-500">Detik</span>
                     </div>
                 </div>
-                <p id="countdownMessage" class="mt-4 text-xs font-medium text-rose-500 italic">
+                <p id="countdownMessage" class="mt-3 sm:mt-4 text-xs font-medium text-rose-500 italic">
                     Menghitung hari menuju perayaan ultahmu secara virtual! 🎉
                 </p>
             </div>
         </section>
 
         <!-- 2. GALERI KENANGAN LDR -->
-        <section id="memories" class="space-y-12">
+        <section id="memories" class="space-y-8 sm:space-y-12">
             <div class="text-center space-y-2">
-                <h2 class="text-3xl font-bold text-slate-800">Cerita & Kenangan LDR Kita 📱✨</h2>
-                <p class="text-slate-600 text-sm">Meskipun belum pernah ketemu langsung, momen virtual kita sangat berharga.</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-800">Cerita & Kenangan LDR Kita 📱✨</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">Meskipun belum pernah ketemu langsung, momen virtual kita sangat berharga.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="glass-card rounded-2xl overflow-hidden p-3 shadow-md hover:-translate-y-2 transition duration-300">
-                    <div class="h-48 rounded-xl overflow-hidden mb-3 relative bg-rose-100">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6">
+                <div class="glass-card rounded-2xl overflow-hidden p-3 shadow-md">
+                    <div class="h-44 sm:h-48 rounded-xl overflow-hidden mb-3 relative bg-rose-100">
                         <img src="WhatsApp Image 2026-11-07 at 21.44.58.jpeg" alt="Chat Kenangan" class="w-full h-full object-cover">
                         <span class="absolute bottom-2 left-2 px-2 py-1 rounded bg-black/60 text-white text-[10px]">Virtual Moment #1</span>
                     </div>
-                    <h4 class="font-bold text-slate-800 text-base">Chat Pertama & Saling Sapa</h4>
+                    <h4 class="font-bold text-slate-800 text-sm sm:text-base">Chat Pertama & Saling Sapa</h4>
                     <p class="text-slate-600 text-xs mt-1">Awal mula saling kirim pesan. Masih malu-malu tapi langsung nyambung banget!</p>
                 </div>
 
-                <div class="glass-card rounded-2xl overflow-hidden p-3 shadow-md hover:-translate-y-2 transition duration-300">
-                    <div class="h-48 rounded-xl overflow-hidden mb-3 relative bg-rose-100">
+                <div class="glass-card rounded-2xl overflow-hidden p-3 shadow-md">
+                    <div class="h-44 sm:h-48 rounded-xl overflow-hidden mb-3 relative bg-rose-100">
                         <img src="WhatsApp Image 2026-11-07 at 21.44.50.jpeg" alt="VC Kenangan" class="w-full h-full object-cover">
                         <span class="absolute bottom-2 left-2 px-2 py-1 rounded bg-black/60 text-white text-[10px]">Virtual Moment #2</span>
                     </div>
-                    <h4 class="font-bold text-slate-800 text-base">Video Call Pertama</h4>
+                    <h4 class="font-bold text-slate-800 text-sm sm:text-base">Video Call Pertama</h4>
                     <p class="text-slate-600 text-xs mt-1">Pertama kali ngelihat muka Anisa di layar, cantek inyyan</p>
                 </div>
 
-                <div class="glass-card rounded-2xl overflow-hidden p-3 shadow-md hover:-translate-y-2 transition duration-300">
-                    <div class="h-48 rounded-xl overflow-hidden mb-3 relative bg-rose-100">
+                <div class="glass-card rounded-2xl overflow-hidden p-3 shadow-md">
+                    <div class="h-44 sm:h-48 rounded-xl overflow-hidden mb-3 relative bg-rose-100">
                         <img src="WhatsApp Image 2026-11-07 at 21.32.58.jpeg" alt="Stream Online" class="w-full h-full object-cover">
                         <span class="absolute bottom-2 left-2 px-2 py-1 rounded bg-black/60 text-white text-[10px]">Virtual Moment #3</span>
                     </div>
-                    <h4 class="font-bold text-slate-800 text-base">pap pertama adekkk!</h4>
+                    <h4 class="font-bold text-slate-800 text-sm sm:text-base">pap pertama adekkk!</h4>
                     <p class="text-slate-600 text-xs mt-1">Sering' ya pap nya, sumpah adek cantek lalu</p>
                 </div>
             </div>
         </section>
 
-        <!-- 3. SPOTIFY STYLE MUSIC PLAYER SECTION (DENGAN 2 KATEGORI: LAGU ADEK & LAGU ABANG) -->
+        <!-- 3. SPOTIFY STYLE MUSIC PLAYER SECTION (OPTIMIZED FOR MOBILE HP) -->
         <section id="music-section" class="space-y-6">
-            <div class="text-center space-y-2">
-                <h2 class="text-3xl font-bold text-slate-800 flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-spotify text-emerald-500"></i> Spotify Playlist Spesial Anisa & Abang
+            <div class="text-center space-y-2 px-2">
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 flex items-center justify-center gap-2 flex-wrap">
+                    <i class="fa-brands fa-spotify text-emerald-500"></i> Spotify Playlist Spesial
                 </h2>
-                <p class="text-slate-600 text-sm">Pilih kategori lagu, putar, jeda, dan pilih lagu favoritmu sesuka hati!</p>
+                <p class="text-slate-600 text-xs sm:text-sm">Pilih kategori lagu, putar, jeda, dan nikmati lagunya!</p>
             </div>
 
-            <!-- Spotify Player Card Container -->
-            <div class="max-w-2xl mx-auto spotify-card rounded-3xl p-6 md:p-8 space-y-6 relative overflow-hidden">
+            <!-- Spotify Player Card Container (Mobile Optimized Layout) -->
+            <div class="max-w-md sm:max-w-2xl mx-auto spotify-card rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 space-y-5 relative overflow-hidden">
+                
                 <!-- Top Brand Header -->
-                <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div class="flex items-center justify-between border-b border-white/10 pb-3">
                     <div class="flex items-center gap-2">
-                        <div class="w-8 h-8 rounded-full bg-emerald-500 flex items-center justify-center text-black font-bold">
-                            <i class="fa-solid fa-compact-disc animate-spin" style="animation-duration: 4s;"></i>
+                        <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 flex items-center justify-center text-black font-bold">
+                            <i class="fa-solid fa-compact-disc animate-spin text-xs sm:text-sm" style="animation-duration: 4s;"></i>
                         </div>
                         <div>
-                            <span class="text-xs uppercase tracking-widest text-emerald-400 font-bold block">Spotify LDR Session</span>
-                            <span class="text-xs text-slate-400">Special Birthday Playlist</span>
+                            <span class="text-[10px] sm:text-xs uppercase tracking-widest text-emerald-400 font-bold block">Spotify LDR Session</span>
+                            <span class="text-[10px] sm:text-xs text-slate-400">Special Birthday Playlist</span>
                         </div>
                     </div>
-                    <div id="playingBadge" class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-semibold flex items-center gap-1.5">
+                    <div id="playingBadge" class="px-2.5 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] sm:text-xs font-semibold flex items-center gap-1.5">
                         <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-                        <span id="statusLabel">Siap Diputar</span>
+                        <span id="statusLabel">Siap Putar</span>
                     </div>
                 </div>
 
-                <!-- Now Playing Main Display (Spotify Card Style) -->
-                <div class="flex flex-col md:flex-row items-center gap-6 bg-white/5 p-5 rounded-2xl border border-white/5 relative">
+                <!-- Now Playing Main Display (Stacked vertically on Mobile so it never clips) -->
+                <div class="flex flex-col items-center text-center sm:flex-row sm:text-left gap-4 bg-white/5 p-4 rounded-2xl border border-white/5 relative">
+                    
                     <!-- Album Art / Vinyl Graphic -->
-                    <div class="relative w-32 h-32 md:w-36 md:h-36 rounded-2xl bg-gradient-to-tr from-rose-500 via-pink-600 to-emerald-600 flex items-center justify-center shadow-2xl shrink-0 overflow-hidden group">
-                        <div id="vinylDisc" class="absolute w-28 h-28 rounded-full border-4 border-dashed border-white/40 flex items-center justify-center transition duration-500">
-                            <div class="w-10 h-10 rounded-full bg-black flex items-center justify-center border border-white/50">
-                                <i class="fa-solid fa-heart text-rose-400 text-xs animate-pulse"></i>
+                    <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl bg-gradient-to-tr from-rose-500 via-pink-600 to-emerald-600 flex items-center justify-center shadow-xl shrink-0 overflow-hidden">
+                        <div id="vinylDisc" class="absolute w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-dashed border-white/40 flex items-center justify-center">
+                            <div class="w-8 h-8 rounded-full bg-black flex items-center justify-center border border-white/50">
+                                <i class="fa-solid fa-heart text-rose-400 text-[10px] animate-pulse"></i>
                             </div>
                         </div>
-                        <div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition"></div>
                     </div>
 
                     <!-- Song Info -->
-                    <div class="flex-1 text-center md:text-left space-y-2 w-full">
-                        <div class="inline-block px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 text-xs font-bold uppercase tracking-wider" id="currentCategoryTag">
+                    <div class="flex-1 space-y-1.5 w-full overflow-hidden">
+                        <div class="inline-block px-2 py-0.5 rounded-full bg-rose-500/20 text-rose-300 text-[10px] sm:text-xs font-bold uppercase tracking-wider" id="currentCategoryTag">
                             Lagu Adek
                         </div>
-                        <h3 id="currentSongTitle" class="text-xl md:text-2xl font-bold text-white tracking-tight">Pilih Lagu di Bawah</h3>
-                        <p id="currentSongArtist" class="text-xs md:text-sm text-slate-400">Anisa & Abang Connection</p>
+                        <h3 id="currentSongTitle" class="text-base sm:text-xl font-bold text-white truncate px-1">Pilih Lagu di Bawah</h3>
+                        <p id="currentSongArtist" class="text-xs text-slate-400 truncate">Anisa & Abang Connection</p>
 
                         <!-- Progress Bar -->
-                        <div class="space-y-1 pt-2">
+                        <div class="space-y-1 pt-1">
                             <div class="flex justify-between text-[10px] text-slate-400">
                                 <span id="currentTime">0:00</span>
                                 <span id="totalDuration">2:30</span>
@@ -365,44 +359,44 @@
                 </div>
 
                 <!-- Playback Control Buttons -->
-                <div class="flex items-center justify-center gap-6 pt-2">
-                    <button onclick="prevSong()" title="Lagu Sebelumnya" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
-                        <i class="fa-solid fa-backward-step"></i>
+                <div class="flex items-center justify-center gap-6 pt-1">
+                    <button onclick="prevSong()" title="Lagu Sebelumnya" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center active:scale-90 transition">
+                        <i class="fa-solid fa-backward-step text-sm"></i>
                     </button>
-                    <button onclick="togglePlayPause()" id="mainPlayBtn" title="Putar / Jeda" class="w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black flex items-center justify-center text-xl shadow-lg hover:scale-105 active:scale-95 transition">
+                    <button onclick="togglePlayPause()" id="mainPlayBtn" title="Putar / Jeda" class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-black flex items-center justify-center text-lg sm:text-xl shadow-lg hover:scale-105 active:scale-95 transition">
                         <i class="fa-solid fa-play" id="mainPlayIcon"></i>
                     </button>
-                    <button onclick="nextSong()" title="Lagu Selanjutnya" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition">
-                        <i class="fa-solid fa-forward-step"></i>
+                    <button onclick="nextSong()" title="Lagu Selanjutnya" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white/10 hover:bg-white/25 text-white flex items-center justify-center active:scale-90 transition">
+                        <i class="fa-solid fa-forward-step text-sm"></i>
                     </button>
                 </div>
 
                 <!-- Category Switcher Tabs ("Lagu Adek" & "Lagu Abang") -->
-                <div class="flex gap-2 border-t border-white/10 pt-4">
-                    <button onclick="switchCategory('adek')" id="tabAdek" class="flex-1 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition bg-emerald-500 text-black flex items-center justify-center gap-2">
+                <div class="flex gap-2 border-t border-white/10 pt-3">
+                    <button onclick="switchCategory('adek')" id="tabAdek" class="flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-emerald-500 text-black flex items-center justify-center gap-1.5">
                         <i class="fa-solid fa-heart text-rose-600"></i> Lagu Adek (<span id="countAdek">0</span>)
                     </button>
-                    <button onclick="switchCategory('abang')" id="tabAbang" class="flex-1 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition bg-white/10 text-slate-300 hover:bg-white/20 flex items-center justify-center gap-2">
+                    <button onclick="switchCategory('abang')" id="tabAbang" class="flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-white/10 text-slate-300 hover:bg-white/20 flex items-center justify-center gap-1.5">
                         <i class="fa-solid fa-guitar text-emerald-400"></i> Lagu Abang (<span id="countAbang">0</span>)
                     </button>
                 </div>
 
-                <!-- Song Selection List (Pilihan Lagu Supaya Bisa Dipilih) -->
-                <div class="space-y-2 max-h-56 overflow-y-auto pr-1" id="songListContainer">
+                <!-- Song Selection List (Scrollable on Mobile) -->
+                <div class="space-y-1.5 max-h-48 overflow-y-auto pr-1 text-xs" id="songListContainer">
                     <!-- Populated by JavaScript -->
                 </div>
             </div>
         </section>
 
         <!-- 4. SURAT & REASONS WHY I LOVE YOU -->
-        <section id="surat" class="space-y-12">
+        <section id="surat" class="space-y-8 sm:space-y-12">
             <div class="text-center space-y-2">
-                <h2 class="text-3xl font-bold text-slate-800">Surat Cinta & Alasan Sayang 💌</h2>
-                <p class="text-slate-600 text-sm">Klik amplop virtual di bawah ini untuk membuka pesan dari kejauhan!</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-800">Surat Cinta & Alasan Sayang 💌</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">Klik amplop virtual di bawah ini untuk membuka pesan dari kejauhan!</p>
             </div>
 
             <!-- Amplop Interaktif -->
-            <div class="py-8 flex justify-center">
+            <div class="py-4 sm:py-8 flex justify-center">
                 <div class="envelope-wrapper">
                     <div class="envelope" id="interactiveEnvelope" onclick="openEnvelope()">
                         <div class="envelope-lid"></div>
@@ -418,15 +412,15 @@
 
             <!-- Modal Surat Lengkap -->
             <div id="letterModal" class="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm hidden flex items-center justify-center p-4">
-                <div class="glass-card max-w-lg w-full rounded-3xl p-6 md:p-8 space-y-4 max-h-[85vh] overflow-y-auto bg-white/95 border border-rose-200 shadow-2xl relative animate-float">
-                    <button onclick="closeLetter()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-rose-100 text-rose-600 hover:bg-rose-200 flex items-center justify-center font-bold">✕</button>
+                <div class="glass-card max-w-lg w-full rounded-3xl p-5 sm:p-8 space-y-4 max-h-[85vh] overflow-y-auto bg-white/95 border border-rose-200 shadow-2xl relative animate-float">
+                    <button onclick="closeLetter()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-rose-100 text-rose-600 font-bold">✕</button>
                     
-                    <div class="text-center border-b border-rose-100 pb-4">
-                        <span class="text-xs uppercase font-bold text-rose-500 tracking-wider">Surat Cinta Ulang Tahun</span>
-                        <h3 class="font-romantic text-4xl text-rose-600 font-bold mt-1">Untuk Anisa Tersayang,</h3>
+                    <div class="text-center border-b border-rose-100 pb-3">
+                        <span class="text-[10px] sm:text-xs uppercase font-bold text-rose-500 tracking-wider">Surat Cinta Ulang Tahun</span>
+                        <h3 class="font-romantic text-3xl sm:text-4xl text-rose-600 font-bold mt-1">Untuk Anisa Tersayang,</h3>
                     </div>
 
-                    <div class="space-y-3 text-slate-700 font-sans text-sm md:text-base leading-relaxed">
+                    <div class="space-y-3 text-slate-700 font-sans text-xs sm:text-base leading-relaxed">
                         <p>Selamat ulang tahun yang ke-14, Anisa! 🥳✨</p>
                         <p>
                             Walaupun saat ini kita masih terpisah oleh jarak dan belum pernah bertatap muka secara langsung, aku mau kamu tahu kalau kamu punya tempat yang sangat spesial di hatiku.
@@ -437,54 +431,54 @@
                         <p>
                             Di usiamu yang ke-14 ini, aku berdoa semoga Anisa selalu sehat, makin pintar, makin cantik, dan bahagiamu selalu melimpah. Dan yang paling penting... semoga suatu hari nanti impian kita untuk bertemu pertama kali bisa terwujud!
                         </p>
-                        <p class="font-handwriting text-xl text-rose-600 pt-2">
+                        <p class="font-handwriting text-lg sm:text-xl text-rose-600 pt-2">
                             "Jarak cuma memisahkan fisik kita, tapi tidak pernah memisahkan rasa ini. Happy Birthday!" 💖
                         </p>
                     </div>
 
-                    <div class="text-right pt-4 border-t border-rose-100">
-                        <p class="text-xs text-slate-400">Dengan penuh cinta dari jauh,</p>
-                        <p class="font-handwriting text-2xl font-bold text-rose-500">Seseorang yang Selalu Mendukungmu</p>
+                    <div class="text-right pt-3 border-t border-rose-100">
+                        <p class="text-[10px] sm:text-xs text-slate-400">Dengan penuh cinta dari jauh,</p>
+                        <p class="font-handwriting text-xl sm:text-2xl font-bold text-rose-500">Seseorang yang Selalu Mendukungmu</p>
                     </div>
                 </div>
             </div>
 
             <!-- Reasons Why I Love You (Flip Cards) -->
-            <div class="space-y-6">
-                <div class="text-center">
-                    <h3 class="text-2xl font-bold text-slate-800">Alasan Aku Senang Mengenal Anisa 💖</h3>
-                    <p class="text-slate-500 text-xs mt-1">Klik/tap kartu di bawah ini untuk melihat alasannya!</p>
+            <div class="space-y-4">
+                <div class="text-center px-2">
+                    <h3 class="text-xl sm:text-2xl font-bold text-slate-800">Alasan Aku Senang Mengenal Anisa 💖</h3>
+                    <p class="text-slate-500 text-xs mt-1">Tap kartu di bawah ini untuk melihat alasannya!</p>
                 </div>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="reasonsGrid">
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4" id="reasonsGrid">
                     <!-- Dynamic Grid Generated by JS -->
                 </div>
             </div>
         </section>
 
         <!-- 5. VOUCHER, KUIS & KADO VIRTUAL -->
-        <section id="interactive" class="space-y-12">
+        <section id="interactive" class="space-y-8 sm:space-y-12">
             <div class="text-center space-y-2">
-                <h2 class="text-3xl font-bold text-slate-800">Zona Interaktif & Hadiah 🎁</h2>
-                <p class="text-slate-600 text-sm">Tukarkan voucher kencan virtual, mainkan kuis, dan buka kado spesialmu!</p>
+                <h2 class="text-2xl sm:text-3xl font-bold text-slate-800">Zona Interaktif & Hadiah 🎁</h2>
+                <p class="text-slate-600 text-xs sm:text-sm">Tukarkan voucher kencan virtual, mainkan kuis, dan buka kado spesialmu!</p>
             </div>
 
             <!-- Love Coupons -->
-            <div class="space-y-4">
-                <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2">
-                    <i class="fa-solid fa-ticket text-rose-500"></i> Love Coupons (Bisa Ditukarkan Kapan Saja!)
+            <div class="space-y-3">
+                <h3 class="text-lg sm:text-xl font-bold text-slate-800 flex items-center gap-2">
+                    <i class="fa-solid fa-ticket text-rose-500"></i> Love Coupons
                 </h3>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="couponsContainer"></div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4" id="couponsContainer"></div>
             </div>
 
             <!-- Mini Quiz Hubungan -->
-            <div class="glass-card rounded-3xl p-6 md:p-8 space-y-6 border border-white">
-                <div class="flex items-center justify-between border-b border-rose-100 pb-4">
+            <div class="glass-card rounded-2xl sm:rounded-3xl p-4 sm:p-8 space-y-5 border border-white">
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-rose-100 pb-3 gap-2">
                     <div>
-                        <h3 class="text-xl font-bold text-slate-800 flex items-center gap-2">
+                        <h3 class="text-lg sm:text-xl font-bold text-slate-800 flex items-center gap-2">
                             <i class="fa-solid fa-brain text-rose-500"></i> Kuis Seberapa Kenal Kita?
                         </h3>
-                        <p class="text-xs text-slate-500">Jawab 3 pertanyaan manis seputar hal yang kita suka!</p>
+                        <p class="text-xs text-slate-500">Jawab 3 pertanyaan manis!</p>
                     </div>
                     <span id="quizBadge" class="px-3 py-1 bg-rose-100 text-rose-600 rounded-full text-xs font-bold">Skor: <span id="quizScore">0</span>/3</span>
                 </div>
@@ -493,47 +487,47 @@
             </div>
 
             <!-- Surprise Unboxing -->
-            <div class="glass-card rounded-3xl p-8 text-center space-y-4 bg-gradient-to-r from-rose-400/20 via-pink-300/20 to-emerald-300/20 border border-white">
-                <div class="w-20 h-20 mx-auto rounded-full bg-rose-500 text-white flex items-center justify-center text-3xl shadow-lg animate-bounce">
+            <div class="glass-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 text-center space-y-4 bg-gradient-to-r from-rose-400/20 via-pink-300/20 to-emerald-300/20 border border-white">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 mx-auto rounded-full bg-rose-500 text-white flex items-center justify-center text-2xl sm:text-3xl shadow-lg animate-bounce">
                     <i class="fa-solid fa-gift"></i>
                 </div>
-                <h3 class="text-2xl font-bold text-slate-800">Buka Kejutan Kado Anisa!</h3>
-                <p class="text-slate-600 text-sm max-w-md mx-auto">
-                    Klik tombol di bawah ini untuk melihat kado digital spesial !
+                <h3 class="text-xl sm:text-2xl font-bold text-slate-800">Buka Kejutan Kado Anisa!</h3>
+                <p class="text-slate-600 text-xs sm:text-sm max-w-md mx-auto">
+                    Klik tombol di bawah ini untuk melihat kado digital spesial!
                 </p>
-                <button onclick="openSurpriseModal()" class="px-8 py-3.5 rounded-full bg-gradient-to-r from-rose-500 to-emerald-600 hover:from-rose-600 hover:to-emerald-700 text-white font-bold text-base shadow-xl hover:scale-105 active:scale-95 transition duration-300">
+                <button onclick="openSurpriseModal()" class="px-6 sm:px-8 py-3 rounded-full bg-gradient-to-r from-rose-500 to-emerald-600 hover:from-rose-600 hover:to-emerald-700 text-white font-bold text-sm sm:text-base shadow-xl active:scale-95 transition duration-300">
                     🎁 Buka Hadiah Sekarang!
                 </button>
             </div>
         </section>
 
         <!-- FOOTER -->
-        <footer class="text-center py-8 border-t border-rose-200/60 space-y-2">
-            <p class="font-romantic text-3xl text-rose-600">Dibuat dengan ❤️ khusus untuk Anisa</p>
-            <p class="text-xs text-slate-400">Selamat Ulang Tahun Ke-14 • 12 November</p>
+        <footer class="text-center py-6 border-t border-rose-200/60 space-y-1">
+            <p class="font-romantic text-2xl sm:text-3xl text-rose-600">Dibuat dengan ❤️ khusus untuk Anisa</p>
+            <p class="text-[10px] sm:text-xs text-slate-400">Selamat Ulang Tahun Ke-14 • 12 November</p>
         </footer>
     </div>
 
     <!-- MODAL KADO VIRTUAL -->
     <div id="surpriseModal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="glass-card max-w-md w-full rounded-3xl p-6 text-center space-y-4 bg-white/95 border border-rose-300 shadow-2xl relative animate-float">
-            <button onclick="closeSurpriseModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-rose-100 text-rose-600 font-bold">✕</button>
+        <div class="glass-card max-w-sm sm:max-w-md w-full rounded-2xl sm:rounded-3xl p-5 sm:p-6 text-center space-y-4 bg-white/95 border border-rose-300 shadow-2xl relative animate-float">
+            <button onclick="closeSurpriseModal()" class="absolute top-3 right-3 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-rose-100 text-rose-600 font-bold">✕</button>
 
-            <div class="w-16 h-16 mx-auto rounded-full bg-rose-100 text-rose-500 flex items-center justify-center text-3xl">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 mx-auto rounded-full bg-rose-100 text-rose-500 flex items-center justify-center text-2xl sm:text-3xl">
                 <i class="fa-solid fa-box-open"></i>
             </div>
 
-            <h3 class="text-2xl font-bold text-slate-800">Kado kecil dari abang 💖</h3>
+            <h3 class="text-xl sm:text-2xl font-bold text-slate-800">Kado kecil dari abang 💖</h3>
 
-            <div class="bg-rose-50 p-4 rounded-2xl border border-rose-200 text-left space-y-2">
-                <p class="text-xs font-bold uppercase text-rose-500 tracking-wider">Info Hadiah:</p>
-                <p class="text-slate-700 text-sm leading-relaxed">
+            <div class="bg-rose-50 p-3 sm:p-4 rounded-2xl border border-rose-200 text-left space-y-2 max-h-56 overflow-y-auto">
+                <p class="text-[10px] sm:text-xs font-bold uppercase text-rose-500 tracking-wider">Info Hadiah:</p>
+                <p class="text-slate-700 text-xs sm:text-sm leading-relaxed">
                     "Selamat ulang tahun, Anisa! ❤️ Maaf ya, kali ini Abang belum bisa memberikan hadiah apa pun. Tapi Abang punya doa dan harapan terbaik untukmu. Semoga kamu selalu bahagia, diberikan kesehatan, dimudahkan segala urusannya, dan semua impianmu bisa tercapai. Jangan pernah merasa sendirian, ya. Terima kasih sudah hadir dan menjadi bagian indah dalam hidup Abang. Semoga Abang masih bisa menemani banyak ulang tahunmu berikutnya. ❤️"
                 </p>
             </div>
 
-            <div class="pt-2">
-                <button onclick="triggerConfetti(); closeSurpriseModal();" class="w-full py-3 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-semibold text-sm transition">
+            <div class="pt-1">
+                <button onclick="triggerConfetti(); closeSurpriseModal();" class="w-full py-2.5 sm:py-3 rounded-xl bg-rose-500 hover:bg-rose-600 text-white font-semibold text-xs sm:text-sm transition">
                     Makasih Banyak! ❤️
                 </button>
             </div>
@@ -595,7 +589,6 @@
         let currentSongIndex = 0;
         let isPlayingMusic = false;
         
-        // Menggunakan HTML5 Audio Element untuk memutar file audio asli
         const audioPlayer = new Audio();
 
         function updateCounts() {
@@ -611,11 +604,11 @@
             const tabAbang = document.getElementById('tabAbang');
 
             if (cat === 'adek') {
-                tabAdek.className = "flex-1 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition bg-emerald-500 text-black flex items-center justify-center gap-2";
-                tabAbang.className = "flex-1 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition bg-white/10 text-slate-300 hover:bg-white/20 flex items-center justify-center gap-2";
+                tabAdek.className = "flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-emerald-500 text-black flex items-center justify-center gap-1.5";
+                tabAbang.className = "flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-white/10 text-slate-300 hover:bg-white/20 flex items-center justify-center gap-1.5";
             } else {
-                tabAbang.className = "flex-1 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition bg-emerald-500 text-black flex items-center justify-center gap-2";
-                tabAdek.className = "flex-1 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition bg-white/10 text-slate-300 hover:bg-white/20 flex items-center justify-center gap-2";
+                tabAbang.className = "flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-emerald-500 text-black flex items-center justify-center gap-1.5";
+                tabAdek.className = "flex-1 py-2 rounded-xl font-bold text-[11px] sm:text-xs uppercase tracking-wider transition bg-white/10 text-slate-300 hover:bg-white/20 flex items-center justify-center gap-1.5";
             }
 
             renderSongList();
@@ -627,17 +620,17 @@
             const songs = playlistData[currentCategory];
 
             listContainer.innerHTML = songs.map((song, idx) => `
-                <div onclick="selectAndPlaySong(${idx})" class="flex items-center justify-between p-3 rounded-xl spotify-card-hover cursor-pointer transition border ${idx === currentSongIndex ? 'border-emerald-500/50 bg-emerald-500/10' : 'border-transparent'}">
-                    <div class="flex items-center gap-3">
-                        <span class="w-6 text-center text-xs text-slate-400 font-bold">${idx + 1}</span>
-                        <div>
-                            <h5 class="text-xs md:text-sm font-bold text-white">${song.title}</h5>
-                            <p class="text-[10px] text-slate-400">${song.artist}</p>
+                <div onclick="selectAndPlaySong(${idx})" class="flex items-center justify-between p-2.5 rounded-xl spotify-card-hover cursor-pointer transition border ${idx === currentSongIndex ? 'border-emerald-500/50 bg-emerald-500/10' : 'border-transparent'}">
+                    <div class="flex items-center gap-2.5 truncate mr-2">
+                        <span class="w-5 text-center text-xs text-slate-400 font-bold">${idx + 1}</span>
+                        <div class="truncate">
+                            <h5 class="text-xs font-bold text-white truncate">${song.title}</h5>
+                            <p class="text-[10px] text-slate-400 truncate">${song.artist}</p>
                         </div>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <span class="text-xs text-slate-400">${song.duration}</span>
-                        <i class="fa-solid ${idx === currentSongIndex && isPlayingMusic ? 'fa-volume-high text-emerald-400 animate-pulse' : 'fa-play text-slate-500'} text-xs"></i>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <span class="text-[10px] text-slate-400">${song.duration}</span>
+                        <i class="fa-solid ${idx === currentSongIndex && isPlayingMusic ? 'fa-volume-high text-emerald-400 animate-pulse' : 'fa-play text-slate-500'} text-[10px]"></i>
                     </div>
                 </div>
             `).join('');
@@ -679,7 +672,7 @@
                 audioPlayer.play().then(() => {
                     isPlayingMusic = true;
                     mainPlayIcon.className = "fa-solid fa-pause";
-                    statusLabel.innerText = "Sedang Memutar";
+                    statusLabel.innerText = "Memutar";
                     vinyl.classList.add('animate-spin');
                     triggerConfetti();
                 }).catch(err => {
@@ -689,7 +682,7 @@
                 audioPlayer.pause();
                 isPlayingMusic = false;
                 mainPlayIcon.className = "fa-solid fa-play";
-                statusLabel.innerText = "Dijeda (Paused)";
+                statusLabel.innerText = "Dijeda";
                 vinyl.classList.remove('animate-spin');
             }
             renderSongList();
@@ -707,7 +700,6 @@
             loadSong(prevIdx);
         }
 
-        // Update progress bar saat lagu berputar
         audioPlayer.addEventListener('timeupdate', () => {
             if (audioPlayer.duration) {
                 const cur = audioPlayer.currentTime;
@@ -722,7 +714,6 @@
             }
         });
 
-        // Pindah otomatis ke lagu berikutnya saat lagu selesai
         audioPlayer.addEventListener('ended', () => {
             nextSong();
         });
@@ -741,7 +732,6 @@
             document.getElementById('music-section').scrollIntoView({ behavior: 'smooth' });
         }
 
-        // Init player
         updateCounts();
         loadSong(0);
 
@@ -762,15 +752,15 @@
         function renderReasons() {
             const container = document.getElementById('reasonsGrid');
             container.innerHTML = reasonsData.map((item, index) => `
-                <div class="h-36 perspective-1000 cursor-pointer" onclick="this.querySelector('.flip-card-inner').classList.toggle('rotate-y-180')">
+                <div class="h-32 sm:h-36 perspective-1000 cursor-pointer" onclick="this.querySelector('.flip-card-inner').classList.toggle('rotate-y-180')">
                     <div class="flip-card-inner relative w-full h-full duration-500 transform-style-3d">
-                        <div class="absolute inset-0 w-full h-full glass-card rounded-2xl p-4 flex flex-col items-center justify-center text-center border border-white backface-hidden shadow-sm hover:border-rose-300">
-                            <i class="fa-solid ${item.icon} text-rose-500 text-2xl mb-2"></i>
-                            <span class="text-xs font-bold text-slate-700">Alasan #${index + 1}</span>
-                            <span class="text-[10px] text-slate-400 mt-1">Tap untuk balik 🔄</span>
+                        <div class="absolute inset-0 w-full h-full glass-card rounded-2xl p-3 sm:p-4 flex flex-col items-center justify-center text-center border border-white backface-hidden shadow-sm">
+                            <i class="fa-solid ${item.icon} text-rose-500 text-xl sm:text-2xl mb-1.5"></i>
+                            <span class="text-[11px] sm:text-xs font-bold text-slate-700">Alasan #${index + 1}</span>
+                            <span class-[9px] sm:text-[10px] text-slate-400 mt-0.5">Tap balik 🔄</span>
                         </div>
-                        <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-rose-500 to-pink-500 text-white rounded-2xl p-4 flex items-center justify-center text-center rotate-y-180 backface-hidden shadow-md">
-                            <p class="text-xs font-medium leading-relaxed">${item.text}</p>
+                        <div class="absolute inset-0 w-full h-full bg-gradient-to-br from-rose-500 to-pink-500 text-white rounded-2xl p-3 sm:p-4 flex items-center justify-center text-center rotate-y-180 backface-hidden shadow-md">
+                            <p class="text-[11px] sm:text-xs font-medium leading-relaxed">${item.text}</p>
                         </div>
                     </div>
                 </div>
@@ -797,18 +787,18 @@
             const coupons = getCoupons();
             const container = document.getElementById('couponsContainer');
             container.innerHTML = coupons.map(c => `
-                <div class="glass-card rounded-2xl p-5 border ${c.claimed ? 'border-emerald-300 bg-emerald-50/30' : 'border-rose-200'} flex flex-col justify-between space-y-3">
+                <div class="glass-card rounded-2xl p-4 sm:p-5 border ${c.claimed ? 'border-emerald-300 bg-emerald-50/30' : 'border-rose-200'} flex flex-col justify-between space-y-3">
                     <div>
-                        <div class="flex items-center justify-between">
-                            <h4 class="font-bold text-slate-800 text-sm md:text-base">${c.title}</h4>
-                            <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full ${c.claimed ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-600'}">
-                                ${c.claimed ? 'Telah Ditukarkan' : 'Tersedia'}
+                        <div class="flex items-center justify-between gap-2">
+                            <h4 class="font-bold text-slate-800 text-xs sm:text-base">${c.title}</h4>
+                            <span class="text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded-full shrink-0 ${c.claimed ? 'bg-emerald-100 text-emerald-700' : 'bg-rose-100 text-rose-600'}">
+                                ${c.claimed ? 'Sudah Dipakai' : 'Tersedia'}
                             </span>
                         </div>
-                        <p class="text-slate-600 text-xs mt-2">${c.desc}</p>
+                        <p class="text-slate-600 text-[11px] sm:text-xs mt-1.5">${c.desc}</p>
                     </div>
-                    <button onclick="claimCoupon(${c.id})" ${c.claimed ? 'disabled' : ''} class="w-full py-2 rounded-xl text-xs font-bold transition ${c.claimed ? 'bg-slate-200 text-slate-400 cursor-not-allowed' : 'bg-rose-500 hover:bg-rose-600 text-white shadow-sm'}">
-                        ${c.claimed ? '✓ Voucher Sudah Dipakai' : 'Tukarkan Voucher Sekarang!'}
+                    <button onclick="claimCoupon(${c.id})" ${c.claimed ? 'disabled' : ''} class="w-full py-2 rounded-xl text-[11px] sm:text-xs font-bold transition ${c.claimed ? 'bg-slate-200 text-slate-400 cursor-not-allowed' : 'bg-rose-500 hover:bg-rose-600 text-white shadow-sm'}">
+                        ${c.claimed ? '✓ Voucher Terpakai' : 'Tukarkan Voucher Sekarang!'}
                     </button>
                 </div>
             `).join('');
@@ -844,11 +834,11 @@
 
             if (currentQ >= quizQuestions.length) {
                 container.innerHTML = `
-                    <div class="text-center py-6 space-y-3">
-                        <div class="text-4xl">🎉</div>
-                        <h4 class="font-bold text-slate-800 text-lg">Kuis Selesai! Kamu Hebat!</h4>
+                    <div class="text-center py-5 space-y-2.5">
+                        <div class="text-3xl">🎉</div>
+                        <h4 class="font-bold text-slate-800 text-base">Kuis Selesai! Kamu Hebat!</h4>
                         <p class="text-xs text-slate-500">Skor Akhir: ${score} dari ${quizQuestions.length} pertanyaan benar.</p>
-                        <button onclick="resetQuiz()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition">Ulangi Kuis</button>
+                        <button onclick="resetQuiz()" class="px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition">Ulangi Kuis</button>
                     </div>
                 `;
                 return;
@@ -856,11 +846,11 @@
 
             const q = quizQuestions[currentQ];
             container.innerHTML = `
-                <div class="space-y-4">
-                    <p class="font-semibold text-slate-800 text-sm">${currentQ + 1}. ${q.q}</p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                <div class="space-y-3">
+                    <p class="font-semibold text-slate-800 text-xs sm:text-sm">${currentQ + 1}. ${q.q}</p>
+                    <div class="grid grid-cols-1 gap-2.5">
                         ${q.options.map((opt, i) => `
-                            <button onclick="checkAnswer(${i})" class="glass-button p-3 rounded-xl text-xs font-semibold text-slate-700 text-left hover:text-rose-600 border border-white">
+                            <button onclick="checkAnswer(${i})" class="glass-button p-2.5 sm:p-3 rounded-xl text-xs font-semibold text-slate-700 text-left hover:text-rose-600 border border-white">
                                 ${opt}
                             </button>
                         `).join('')}
@@ -975,9 +965,9 @@
             }
         }
 
-        function initParticles() {
+        function init`initParticles`() {
             particles = [];
-            for (let i = 0; i < 35; i++) {
+            for (let i = 0; i < 25; i++) {
                 particles.push(new Particle());
             }
         }
@@ -1001,7 +991,7 @@
                 particles.push(p);
             }
             setTimeout(() => {
-                particles.splice(35);
+                particles.splice(25);
             }, 3000);
         }
     </script>
