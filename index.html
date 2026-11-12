@@ -229,34 +229,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Countdown Counter -->
-            <div class="glass-card rounded-2xl p-4 sm:p-6 max-w-2xl mx-auto shadow-lg border border-white/80">
-                <h3 class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-3 sm:mb-4">
-                    <i class="fa-regular fa-clock mr-1"></i> Hitung Mundur Ultah (12 November)
-                </h3>
-                <div class="grid grid-cols-4 gap-2 sm:gap-3 text-center">
-                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
-                        <span id="cd-days" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-[10px] sm:text-xs text-slate-500">Hari</span>
-                    </div>
-                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
-                        <span id="cd-hours" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-[10px] sm:text-xs text-slate-500">Jam</span>
-                    </div>
-                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
-                        <span id="cd-minutes" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-[10px] sm:text-xs text-slate-500">Menit</span>
-                    </div>
-                    <div class="bg-white/60 p-2 sm:p-3 rounded-xl border border-rose-100">
-                        <span id="cd-seconds" class="text-xl sm:text-3xl md:text-4xl font-extrabold text-rose-600 block">00</span>
-                        <span class="text-[10px] sm:text-xs text-slate-500">Detik</span>
-                    </div>
-                </div>
-                <p id="countdownMessage" class="mt-3 sm:mt-4 text-xs font-medium text-rose-500 italic">
-                    Menghitung hari menuju perayaan ultahmu secara virtual! 🎉
-                </p>
-            </div>
         </section>
 
         <!-- 2. GALERI KENANGAN LDR -->
@@ -532,38 +504,7 @@
 
     <!-- JAVASCRIPT CORE LOGIC -->
     <script>
-        /* ==========================================
-           1. COUNTDOWN TIMER LOGIC
-           ========================================== */
-        function updateCountdown() {
-            const now = new Date();
-            let currentYear = now.getFullYear();
-            let targetDate = new Date(currentYear, 10, 12);
-
-            if (now > targetDate && (now.getMonth() !== 10 || now.getDate() !== 12)) {
-                targetDate = new Date(currentYear + 1, 10, 12);
-            }
-
-            const diff = targetDate - now;
-
-            if (now.getMonth() === 10 && now.getDate() === 12) {
-                document.getElementById('countdownMessage').innerText = "🎉 SELAMAT ULANG TAHUN ANISA! HARI INI HARI SPESIALMU! 🥳";
-            }
-
-            const days = Math.floor(diff / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-
-            document.getElementById('cd-days').innerText = String(days).padStart(2, '0');
-            document.getElementById('cd-hours').innerText = String(hours).padStart(2, '0');
-            document.getElementById('cd-minutes').innerText = String(minutes).padStart(2, '0');
-            document.getElementById('cd-seconds').innerText = String(seconds).padStart(2, '0');
-        }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-
-       /* ==========================================
+/* ==========================================
            2. SPOTIFY PLAYER & DUAL CATEGORIES (LAGU ASLI)
            ========================================== */
         const playlistData = {
